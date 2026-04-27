@@ -1,0 +1,31 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	/* margin-bottom: 10px; */
+}
+
+caption {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	border: 1px solid #000;
+}
+
+td,
+th {
+	border: 1px solid #000;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+caption {
+	border-bottom: none;
+}
+
+#sixseven {
+	color: red;
+}
+.file-ex {
+	border-left: 1px solid #000;
+}
+
+.file-exe {
+	border: none;
+}
