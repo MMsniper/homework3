@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Формы</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<form>
+			<fieldset class="green-group">
+				<h2 class="with">Ваши личные данные</h2>
+				<label>
+					<h3>Ваше имя</h3>
+					<input
+						id="loremtop"
+						type="text"
+						name="name"
+						required
+						placeholder="Имя"
+					/>
+				</label>
+				<label>
+					<h3>Ваш возраст</h3>
+					<input
+						type="number"
+						name="date"
+						required
+						placeholder="Возраст"
+						inputmode="numeric"
+				/></label>
+				<label
+					><h3>Ваш номер телефона</h3>
+					<input
+						type="tel"
+						name="telephone"
+						required
+						placeholder="+79999999999"
+						inputmode="tel"
+				/></label>
+				<label></label>
+				<label
+					><h3>Ваша почта</h3>
+					<input
+						type="email"
+						name="mail"
+						required
+						placeholder="@"
+						inputmode="email"
+				/></label>
+				<label>
+					<h3>Сообщение</h3>
+					<textarea required placeholder="Ваше сообщение."></textarea>
+				</label>
+				<fieldset class="fild-group">
+					
+					<label ><input type="checkbox"></label>
+					Отправить сообщение!
+					<label ><input class="wither" type="submit"></label>
+				</fieldset>	
+		</form>
+	</body>
+</html>
