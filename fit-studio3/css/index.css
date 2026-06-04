@@ -60,7 +60,7 @@
 .news-container {
 	display: flex;
 	gap: 28px;
-	margin-bottom:140px;
+	
 }
 
 .news-article {
@@ -70,6 +70,7 @@
 	background-color: #fff;
 	border: 1px solid #d3cbd9;
 	overflow: hidden;
+	margin-bottom:140px;
 }
 
 .news-article img {
