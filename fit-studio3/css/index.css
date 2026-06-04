@@ -59,8 +59,8 @@
 
 .news-container {
 	display: flex;
-
 	gap: 28px;
+	padding-bottom:140px;
 }
 
 .news-article {
