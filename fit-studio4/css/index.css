@@ -106,7 +106,7 @@
 	display: inline-block;
 	width: 22px;
 	height: 9px;
-	background-image: url(../images/arrow-right-icon.svg);
+	background: url(../images/arrow-right-icon.svg) no-repeat;
 	transition: transform 0.3s;
 }
 
