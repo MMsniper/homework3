@@ -216,6 +216,10 @@ details > p {
 @media (width <= 992px) {
 	.hero::after {
 		display: none;
+
+		.decor::before {
+			display: none;
+		}
 	}
 
 	.hero-container {
