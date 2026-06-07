@@ -159,8 +159,8 @@ button.button:hover {
 			max-width: 768px;
 		}
 
-		.decor::before{
-			display:none;
+		.decor::before {
+			display: none;
 		}
 	}
 
