@@ -143,58 +143,57 @@ button.button:hover {
 	width: calc(50% - 250px);
 	height: 48px;
 	background: url("../images/decor-icon.svg") repeat-x;
-	a:focus-visible,
-	button:focus-visible,
-	summary:focus-visible {
-		outline: 2px solid #3596ed;
-		outline-offset: 1px;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+	outline: 2px solid #3596ed;
+	outline-offset: 1px;
+}
+
+a:active {
+	color: #3596ed;
+}
+
+@media (width <= 992px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media (width <= 768px) {
+	.container {
+		max-width: 576px;
 	}
 
-	a:active {
-		color: #3596ed;
+	.title-large {
+		font-size: 40px;
+		margin-bottom: 30px;
 	}
 
-	@media (width <= 992px) {
-		.container {
-			max-width: 768px;
-		}
-
-		
+	.home-page .title-large {
+		max-width: inherit;
+		text-align: center;
 	}
 
-	@media (width <= 768px) {
-		.container {
-			max-width: 576px;
-		}
+	.title-medium {
+		font-size: 22px;
+	}
+}
 
-		.title-large {
-			font-size: 40px;
-			margin-bottom: 30px;
-		}
-
-		.home-page .title-large {
-			max-width: inherit;
-			text-align: center;
-		}
-
-		.title-medium {
-			font-size: 22px;
-		}
+@media (width <= 576px) {
+	.section {
+		margin-bottom: 80px;
 	}
 
-	@media (width <= 576px) {
-		.section {
-			margin-bottom: 80px;
-		}
+	.title-large {
+		max-width: inherit;
+		text-align: center;
+		font-size: 32px;
+	}
 
-		.title-large {
-			max-width: inherit;
-			text-align: center;
-			font-size: 32px;
-		}
-
-		.title-medium {
-			font-size: 18px;
-		}
+	.title-medium {
+		font-size: 18px;
 	}
 }

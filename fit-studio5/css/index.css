@@ -158,6 +158,7 @@
 	align-items: flex-start;
 	gap: 28px;
 }
+
 details {
 	margin-bottom: 20px;
 	border-block: 1px solid #d3cbd9;
@@ -216,10 +217,10 @@ details > p {
 @media (width <= 992px) {
 	.hero::after {
 		display: none;
+	}
 
-		.decor::before {
-			display: none;
-		}
+	.decor::before {
+		display: none;
 	}
 
 	.hero-container {
