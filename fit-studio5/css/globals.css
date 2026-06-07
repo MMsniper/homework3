@@ -158,15 +158,15 @@ button.button:hover {
 		.container {
 			max-width: 768px;
 		}
+
+		.decor::before{
+			display:none;
+		}
 	}
 
 	@media (width <= 768px) {
 		.container {
 			max-width: 576px;
-		}
-
-		.decor::before{
-			display:none;
 		}
 
 		.title-large {
