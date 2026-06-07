@@ -220,7 +220,7 @@ details > p {
 		.decor::before {
 			display: none;
 		}
-	
+	}
 
 	.hero-container {
 		-webkit-box-orient: vertical;
