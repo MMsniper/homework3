@@ -1,14 +1,24 @@
 :root {
   /* fonts */
   --font-family: "OpenSans", sans-serif;
-  --second-family: "namu-pro", sans-serif;
+  --second-family: "Namu-pro", sans-serif;
 
   /* colors */
   --main-color: #fff;
   --black-color: #111;
+  --dyson-color: #c5358c;
+  --hero-color: #ddd;
 
   /* container */
-  --container-width: 1262px;
-  /* min-width 390px, max-width 1262px */
+  --container-width: 1360px;
+  --container-min-width: 390px;
   --container-padding: 30px;
+
+  /* time */
+  --transition-time: 0.3s;
+
+  /* z-index */
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
 }

@@ -1,8 +1,8 @@
 @font-face {
-  font-family: namu-pro;
+  font-family: Namu-pro;
   src:
-    local("namu pro"),
-    local("namu-pro"),
+    local("Namu pro"),
+    local("Namu-pro"),
     url("../../fonts/namu-pro.woff2") format(woff2);
   font-weight: 900;
   font-style: normal;

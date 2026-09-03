@@ -1,0 +1,20 @@
+.burger__menu-button {
+  stroke: var(--main-color);
+  transition: stroke var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .burger__menu-button:hover {
+    stroke: var(--dyson-color);
+  }
+}
+
+.burger__menu-button:active {
+  stroke: var(--dyson-color);
+}
+
+@media (width > 992px) {
+  .burger__menu-button {
+    display: none;
+  }
+}

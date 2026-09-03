@@ -3,52 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фен Dyson</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link
       rel="shortcut icon"
       href="./icons/dyson-favicon-32x32.ico"
-      type="image/x-icon
-    "
+      type="image/x-icon"
     />
-    <title>Фен Dyson</title>
   </head>
   <body class="page__body">
-    <header class="header">    
+    <header class="header">
       <div class="container header__container">
-        <img class="burger__logo-img" src="./icons/burger-menu.svg" width="50" height="50" alt="Бургер меню ">
-        <a class="logo header__logo" href="#"
+        <button
+          class="burger__menu-button"
+          title="Открыть Меню"
+          aria-label="Открыть Меню"
+        >
+          <svg width="50" height="50">
+            <use class="burger__logo" href="./icons/burger-menu.svg"></use>
+          </svg>
+        </button>
+        <a href="#" class="header__logo-link"
           ><img
-            class="logo__img"
+            class="header__logo-img"
             src="./icons/dyson-logo.svg"
-            width="183"
-            height="77"
-            alt="Логотип Dyson"
+            alt="Логотип Дайсон"
         /></a>
-        <nav class="menu header__menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="" class="menu__link">О нас</a>
+        <nav>
+          <ul class="header__menu-list">
+            <li class="header__menu-option">
+              <a href="#me" class="header__menu-link">О нас</a>
             </li>
-            <li class="menu__item">
-              <a href="" class="menu__link">Доставка и оплата</a>
+            <li class="header__menu-option">
+              <a href="" class="header__menu-link">Доставка и оплата</a>
             </li>
-            <li class="menu__item">
-              <a href="" class="menu__link">Регистрация продукта</a>
+
+            <li class="header__menu-option">
+              <a href="" class="header__menu-link">Регистрация продукта</a>
             </li>
-            <li class="menu__item">
-              <a href="" class="menu__link">Сервис</a>
+            <li class="header__menu-option">
+              <a href="" class="header__menu-link">Сервис</a>
             </li>
-            <li class="menu__item">
-              <a href="" class="menu__link">Сертификаты и лизензии</a>
+            <li class="header__menu-option">
+              <a href="" class="header__menu-link">Сертификаты и лицензии</a>
             </li>
           </ul>
         </nav>
-        <div class="header__actions">
-          <button class="header__actions-button" title="Корзина" aria-label="Корзина">
-          <svg width="36" height="36"><use><img src="icons/package.svg" alt="Пакет с функцией корзина"></use></svg>
+        <button
+          class="header__basket-logo"
+          title="Корзина"
+          aria-label="Корзина"
+        >
+          <svg width="36" height="36">
+            <use class="header__basket-img" href="./icons/package.svg"></use>
+          </svg>
         </button>
-      </div>      
       </div>
     </header>
+    <main class="main">
+      <section id="me" class="hero">
+        <div class="container hero__container">
+          <header class="hero__header">
+            <h1 class="hero__title">
+              Уникальные технологии для ухода за волосами
+            </h1>
+            <p class="hero__paragraph">
+              Идеальная укладка для всех типов волос вместе с Dyson
+            </p>
+            <div class="hero__link-div">
+              <a class="hero__link" href="#">Подробнее</a>
+            </div>
+          </header>
+          <picture class="hero__pictures"
+            ><img
+              class="hero__pictures-img"
+              src="./images/hero-women-img.png"
+              alt="Девушка с феном dyson в руках"
+          /></picture>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

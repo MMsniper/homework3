@@ -1,54 +1,88 @@
 .header {
   background-color: var(--black-color);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: var(--layer-3);
 }
 
 .header__container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }
 
-.burger__logo-img {
+.header-logo-link {
   display: flex;
-  align-items: center;
+  flex-shrink: 0;
 }
 
-@media (width > 1305px) {
-  .header__menu {
-    display: block;
+@media (width <= 992px) {
+  .header__logo-link {
+    position: absolute;
+    left: 100px;
   }
+}
 
-  .burger__logo-img {
+.header__logo-img {
+  display: flex;
+  flex-shrink: 0;
+  /* min-width 390px, max-width 1360px */
+  width: clamp(94px, 3.639rem + 9.18vw, 183px);
+}
+
+@media (width > 992px) {
+  .header__menu-list {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    /* min-width 992px, max-width 1360px */
+    gap: clamp(15px, -2.745rem + 5.43vw, 30px);
+    flex-wrap: nowrap;
   }
 }
 
-/* @media (width <= 1305px) {
-  .header__menu {
+@media (width <= 992px) {
+  .header__menu-list {
     display: none;
   }
-} */
-
-.menu__list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
 }
 
-.menu__link {
+.header__menu-link {
   font-family: var(--second-family);
   font-weight: 900;
-  font-size: 20px;
+  /* min-width 768px, max-width 1360px */
+  font-size: clamp(15px, 0.532rem + 0.84vw, 20px);
   color: var(--main-color);
+  white-space: nowrap;
 }
 
-.header__actions {
-  display: flex;
-  gap: 50px;
+.header__menu-link {
+  color: var(--main-color);
+  transition: color var(--transition-time);
 }
 
-.header__actions-button {
-  display: flex;
+@media (any-hover: hover) {
+  .header__menu-link:hover {
+    color: var(--dyson-color);
+  }
+}
+
+.header__menu-link:active {
+  color: var(--dyson-color);
+}
+
+.header__basket-logo {
+  stroke: var(--main-color);
+  transition: stroke var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .header__basket-logo:hover {
+    stroke: var(--dyson-color);
+  }
+}
+
+.header__basket-logo:active {
+  stroke: var(--dyson-color);
 }
